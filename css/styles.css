@@ -4,17 +4,37 @@
   --accent-color: #2196f3;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--text-title-color);
-  background-color: #e5e5e5;
+  background-color: #ffffff;
 }
 li {
   list-style-type: none;
+  padding: 0px;
+  margin: 0px;
 }
 a {
   text-decoration: none;
 }
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.container {
+  display: flex;
+}
+
 /*блок навигации и контакты*/
 
 .top {
@@ -22,6 +42,13 @@ a {
   color: var(--text-title-color);
   background-color: #ffffff;
 }
+.line {
+  outline: 1px solid #e5e5e5;
+}
+
+/*.header {
+  display: flex;
+}*/
 
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -56,7 +83,9 @@ a {
 .link.current {
   color: var(--accent-color);
 }
-
+.header-contact {
+  display: flex;
+}
 .mail-tel {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -73,10 +102,13 @@ a {
 
 /*главный баннер сайта*/
 .main-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -88,14 +120,21 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
+  min-width: 200px;
 
-  display: flex;
+  display: inline;
   align-items: center;
-  text-align: center;
+
   letter-spacing: 0.06em;
+
+  cursor: pointer;
 
   font-family: 'Roboto', sans-serif;
   color: #ffffff;
+  background-color: var(--accent-color);
+
+  border-radius: 4px;
+  padding: 10px 32px;
 }
 .banner {
   width: 1600px;
@@ -103,9 +142,14 @@ a {
   left: 0px;
   top: 80px;
 
+  text-align: center;
+
   background-color: #2f303a;
 }
 
+.section {
+  padding: 94px 215px;
+}
 /*блок особенностей,буллеты
 .bullet {
   width: 1170px;
@@ -113,7 +157,11 @@ a {
   left: 215px;
   top: 774px;
 }*/
+
 .bullet-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -122,6 +170,9 @@ a {
   color: var(--text-title-color);
 }
 .bullet-description {
+  margin-top: 0;
+  margin-bottom: 94px;
+
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -139,6 +190,9 @@ a {
 }*/
 .direct-title,
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -155,7 +209,14 @@ a {
   left: 0px;
   top: 1449px;
 }*/
+.hero-image {
+  margin-bottom: 30px;
+}
+
 .hero-name {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -166,6 +227,9 @@ a {
   color: var(--text-title-color);
 }
 .hero-description {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -186,6 +250,8 @@ a {
   background: #2f303a;
 }
 .logo-footer {
+  margin-bottom: 20px;
+
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -194,6 +260,9 @@ a {
   color: #ffffff;
 }
 .address {
+  margin-top: 0;
+  margin-bottom: 9px;
+
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -211,6 +280,9 @@ a {
 
   color: rgba(255, 255, 255, 0.6);
 }
+.mail {
+  margin-bottom: 6px;
+}
 /*скрытый заголовок*/
 .hide {
   visibility: hidden;
@@ -222,18 +294,36 @@ a {
   left: 215px;
   top: 174px;
 }*/
+
+/*кнопки-фильтры*/
 .filter {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
 
-  /*text-align: center;*/
+  display: inline;
+  align-items: center;
+  text-align: center;
   letter-spacing: 0.03em;
 
   color: var(--text-title-color);
+  cursor: pointer;
+
+  border-radius: 4px;
+  padding: 6px 22px;
+  margin-bottom: 50px;
+}
+
+/*панель проектов*/
+
+.project-image {
+  margin-bottom: 20px;
 }
 .project-title {
+  margin-top: 0;
+  margin-bottom: 4px;
+
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -244,6 +334,9 @@ a {
   color: var(--text-title-color);
 }
 .project-description {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;

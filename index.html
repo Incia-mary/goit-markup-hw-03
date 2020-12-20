@@ -12,10 +12,10 @@
 </head>
 <body>
     <!--шапка сайта-->
-    <header>
+        <header>
         <div class="top">
         <!--блок навигации-->
-            <nav>
+            <nav class="header">
                 <a href="" class="logo"> <span class="accent" >Web</span>Studio</a>
         <!--ссылки на другие страницы-->
         <ul class="site-nav">
@@ -32,22 +32,26 @@
         </ul>
         </nav>
         <!--ссылки на контакты-->
+        <div class="header-contact">
          <ul>
              <li> <a href="mailto:info@devstudio.com" class="mail-tel"> info@devstudio.com </a> </li>
              <li> <a href="tel:+380961111111" class="mail-tel"> +38 096 111 11 11 </a> </li>
              
          </ul>
         </div>
+        </div>
         </header>
         <!--главный заголовок-->
                     <section class="banner"> 
-                <h1 class="main-title"> Эффективные решения для вашего бизнеса </h1>
+                <h1 class="main-title"> Эффективные решения <br> для вашего бизнеса </h1>
                 <a href="" class="button"> Заказать услугу </a>
             </section>
                <!--основная часть сайта-->
+            
         <main>
             <!--блок особенностей, буллеты-->
-            <section class="bullet">
+            <section class="bullet section">
+                <div class="container">
                 <ul>
                     <li>
                         <h3 class="bullet-title"> ВНИМАНИЕ К ДЕТАЛЯМ </h3>
@@ -66,8 +70,9 @@
                         <p class="bullet-description"> Значимость этих проблем настолько очевидна, что реализация плановых заданий. </p>
                     </li>
                 </ul>
+                </div>
             </section>
-            <section class="direct">
+            <section class="direct section">
                 <!--блок направлений работы-->
                 <h2 class="direct-title">Чем мы занимаемся</h2>
                 <ul>
@@ -76,33 +81,34 @@
                     <li> <img src="images/box3.jpg" alt="Tablet" width="370"> </li>                         
                 </ul>
             </section>
-            <section class="hero">
+            <section class="hero section">
                 <!--блок герои-->
                 <h2 class="hero-title"> Наша команда </h2>
                 <ul>
                     <li>
-                        <img src="images/igor.jpg" alt="Игорь Демьяненко" width="270">
+                        <img src="images/igor.jpg" alt="Игорь Демьяненко" width="270" class="hero-image">
                         <h4 class="hero-name"> Игорь Демьяненко </h4>
                         <p class="hero-description"> Product Designer </p>
                 </li>
                     <li>
-                        <img src="images/olga.jpg" alt="Ольга Репина" width="270">
+                        <img src="images/olga.jpg" alt="Ольга Репина" width="270" class="hero-image">
                         <h4 class="hero-name"> Ольга Репина </h4>
                         <p class="hero-description"> Frontend Developer </p>
                 </li>
                     <li>
-                        <img src="images/nicolay.jpg" alt="Николай Тарасов" width="270">
+                        <img src="images/nicolay.jpg" alt="Николай Тарасов" width="270" class="hero-image">
                         <h4 class="hero-name"> Николай Тарасов </h4>
                         <p class="hero-description"> Marketing </p>
                 </li>
                     <li>
-                        <img src="images/michael.jpg" alt="Михаил Ермаков" width="270">
+                        <img src="images/michael.jpg" alt="Михаил Ермаков" width="270" class="hero-image">
                         <h4 class="hero-name"> Михаил Ермаков </h4>
                         <p class="hero-description"> UI Designer </p>
                 </li>
                 </ul>
             </section>
         </main>
+        
         <!--подвал сайта-->
     <footer class="footer" >
     <a href="" class="logo-footer"> <span class="accent">Web</span>Studio</a>
@@ -111,9 +117,10 @@
         <li>
             <p class="address"> г. Киев, пр-т Леси Украинки, 26 </p>
         </li>
-        <li> <a href="mailto:info@devstudio.com" class="contact"> info@devstudio.com </a> </li>
+        <li> <a href="mailto:info@devstudio.com" class="contact mail"> info@devstudio.com </a> </li>
         <li> <a href="tel:+380961111111" class="contact"> +38 096 111 11 11 </a> </li>
     </ul>
     </footer>
+   
 </body>
 </html>
