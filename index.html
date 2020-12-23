@@ -12,14 +12,16 @@
 </head>
 <body>
     <!--шапка сайта-->
-        <header>
+            <header>
                 <!--блок навигации-->
-        <div class="container main-nav top">
+                <div class="top">
+        <div class="main-nav">
             <nav class="nav">
                  <a href="" class="logo"> <span class="accent">Web</span>Studio</a>
         <!--ссылки на другие страницы-->
-        <ul class="site-nav">
-            <li class="item"> 
+        
+               <ul class="site-nav">
+                   <li class="item"> 
                 <a href="index.html" class="link current"> Студия </a> 
             </li>
             <li class="item"> 
@@ -28,28 +30,29 @@
             <li class="item"> 
                 <a href="" class="link"> Контакты </a> 
             </li>
-            
-        </ul>
+            </ul>
+   
         </nav>
         <!--ссылки на контакты-->
          <ul class="auth-nav">
              <li class="item"> <a href="mailto:info@devstudio.com" class="mail-tel"> info@devstudio.com </a> </li>
              <li class="item"> <a href="tel:+380961111111" class="mail-tel"> +38 096 111 11 11 </a> </li>
-             
-         </ul>
-    </div>        
+          </ul>
+    </div>    
+    </div>
         </header>
         <!--главный заголовок-->
                     <section class="banner"> 
-                <h1 class="main-title"> Эффективные решения <br> для вашего бизнеса </h1>
+                <h1 class="main-title"> <div>Эффективные решения</div>для вашего бизнеса </h1>
                 <a href="" class="button"> Заказать услугу </a>
             </section>
                <!--основная часть сайта-->
             
         <main>
             <!--блок особенностей, буллеты-->
-            <section class="bullet section">
-                <div class="container bullets">
+            <section class="bullet">
+                <div class="container section">
+                <div class="bullets">
                 <ul class="bullet-main">
                     <li class="bullet-item">
                         <h3 class="bullet-title"> ВНИМАНИЕ К ДЕТАЛЯМ </h3>
@@ -69,18 +72,22 @@
                     </li>
                 </ul>
                 </div>
+                </div>
             </section>
-            <section class="direct section">
+            <section class="direct">
                 <!--блок направлений работы-->
+                <div class="container section">
                 <h2 class="direct-title">Чем мы занимаемся</h2>
                 <ul class="direct-main">
                     <li class="direct-image"> <img src="images/box1.jpg" alt="Laptop" width="370"> </li>
                     <li class="direct-image"> <img src="images/box2.jpg" alt="Mobile phone" width="370"> </li>
                     <li class="direct-image"> <img src="images/box3.jpg" alt="Tablet" width="370"> </li>                         
                 </ul>
+                </div>
             </section>
-            <section class="hero section">
+            <section class="hero">
                 <!--блок герои-->
+                <div class="container section">
                 <h2 class="hero-title"> Наша команда </h2>
                 <ul class="hero-main">
                     <li class="hero-item">
@@ -104,11 +111,12 @@
                         <p class="hero-description"> UI Designer </p>
                 </li>
                 </ul>
+                </div>
             </section>
         </main>
         
         <!--подвал сайта-->
-    <footer class="footer" >
+    <footer class="footer">
     <a href="" class="logo-footer"> <span class="accent">Web</span>Studio</a>
     <!--блок контактов в подвале-->
     <ul>
@@ -119,6 +127,6 @@
         <li> <a href="tel:+380961111111" class="contact"> +38 096 111 11 11 </a> </li>
     </ul>
     </footer>
-   
+</div>
 </body>
 </html>
