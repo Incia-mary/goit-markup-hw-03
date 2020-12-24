@@ -217,7 +217,7 @@ ul {
   padding: 0;
 }
 
-.bullet-item:not(:first-child) {
+.bullet-item:not(:last-child) {
   margin-left: 30px;
 }
 
