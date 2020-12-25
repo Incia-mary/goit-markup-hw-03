@@ -31,6 +31,9 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
 }
+.none {
+  padding: 0;
+}
 
 .container {
   width: 1200px;
@@ -55,7 +58,7 @@ ul {
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
-/*.site-nav.link {
+/*.site-nav .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -72,15 +75,13 @@ ul {
 }
 
 .header {
-  display: flex;
   border-bottom: 1px solid #e5e5e5;
 }
 .nav {
   display: flex;
   margin-top: 24px;
   margin-bottom: 25px;
-  margin-left: 215px;
-  margin-right: auto;
+  /*margin-right: auto;*/
 }
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -117,10 +118,9 @@ ul {
 }
 .auth-nav {
   display: flex;
-  margin-left: 331px;
+  margin-left: 290px;
   margin-top: 32px;
   margin-bottom: 32px;
-  /*margin-right: 215px;*/
 }
 .auth-nav .item + .item {
   margin-left: 50px;
@@ -177,7 +177,7 @@ ul {
 }
 .banner {
   /*width: 1600px;*/
-  padding: 200px 452px;
+  padding: 200px;
   left: 0px;
   top: 80px;
 
@@ -187,25 +187,17 @@ ul {
 }
 
 .section {
-  /*padding-top: 94px;
-  padding-bottom: 0;*/
   margin: 0;
-
-  /* width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;*/
 }
 .section-portfolio {
-  padding-left: 215px;
-  padding-right: 215px;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 /*блок особенностей,буллеты*/
 
 .bullet {
-  padding: 94px 215px 0;
+  padding-top: 94px;
+  padding-bottom: 0;
 }
 .bullets {
   display: flex;
@@ -250,7 +242,8 @@ ul {
   display: flex;
 }
 .direct {
-  padding: 94px 215px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .direct-image {
@@ -275,6 +268,8 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 
+  justify-content: center;
+
   color: var(--text-title-color);
 }
 /*блок герои*/
@@ -283,8 +278,10 @@ ul {
   display: flex;
 }
 .hero {
-  padding: 94px 215px;
-
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.hero-color {
   background-color: #f5f4fa;
 }
 .hero-image {
@@ -325,19 +322,14 @@ ul {
 }
 
 /*подвал сайта*/
-.none {
-  padding: 0;
-}
 
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 215px;
-  padding-right: auto;
-
+}
+.footer-color {
   background: #2f303a;
 }
-
 .logo-footer {
   margin-bottom: 20px;
 
@@ -375,6 +367,8 @@ ul {
 /*скрытый заголовок*/
 .hide {
   visibility: hidden;
+  line-height: 0;
+  margin: 0;
 }
 /*основная часть страницы "портфолио"*/
 
