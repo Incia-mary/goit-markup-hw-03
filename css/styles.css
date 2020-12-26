@@ -176,8 +176,8 @@ ul {
   padding: 10px 32px;
 }
 .banner {
-  /*width: 1600px;*/
-  padding: 200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   left: 0px;
   top: 80px;
 
@@ -280,10 +280,9 @@ ul {
 .hero {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-.hero-color {
   background-color: #f5f4fa;
 }
+
 .hero-image {
   margin-bottom: 30px;
 }
@@ -326,10 +325,9 @@ ul {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-.footer-color {
   background: #2f303a;
 }
+
 .logo-footer {
   margin-bottom: 20px;
 
